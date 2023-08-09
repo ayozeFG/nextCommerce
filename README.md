@@ -1,6 +1,6 @@
 # Palitos APP
 Para ejecutar localmente se necesita la base de datos corriendo en un docker.
-Recomiendo tener la imagen de mongo en docker descargada previamente.
+Necesario tener docker descargado localmente y recomiendo tener tambien la imagen de mongo en docker descargada previamente.
 ```
 Para construir todo el entorno de docker la primera vez, ejecutar: docker-compose up -d
 ```
