@@ -16,7 +16,6 @@ const NotFoundPage = () => {
             <Button
                 onClick={() => router.push('/')}
                 color="primary"
-                className="py-2 px-4 mt-5"
             >
                 Back Home
             </Button>
