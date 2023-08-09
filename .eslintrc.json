@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+    "extends": ["eslint:recommended", "next"],
+    "rules": {
+        "quotes": ["error", "single"]
+      },
+    "ignorePatterns": ["node_modules/", ".next/"],
+    "env": {
+        "jest": true
+    }
 }
