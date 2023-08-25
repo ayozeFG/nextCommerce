@@ -150,7 +150,7 @@ a {
 
   .container{
     height: 100vh;
-    background: black !important;
+    /* background: black !important; */
 }
     .container div{
         animation: fadeIn 1s ease-in both;
