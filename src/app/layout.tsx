@@ -17,7 +17,8 @@ export default function RootLayout({
         <html lang="es">
             <body>
                 <ThemeRegistry>
-                    <div className='main'>
+                    {/* <div className='main'> */}
+                    <div>
                         {children}
                     </div>
                 </ThemeRegistry>

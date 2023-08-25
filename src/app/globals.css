@@ -147,3 +147,119 @@ a {
     min-height: 100vh;
     border: 1px solid red;
   }
+
+  .container{
+    height: 100vh;
+    background: black !important;
+}
+    .container div{
+        animation: fadeIn 1s ease-in both;
+        opacity: 0;
+    }
+
+  .background-image {
+    /* object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important; */
+  }
+
+  .container div:nth-child(1){
+      animation-delay: 0.5s;
+  }
+  .container div:nth-child(2){
+    max-width: 60%;
+    animation-delay: 0.1s;
+    }
+  .container div:nth-child(3){
+    animation-delay: 1s;
+    }
+
+    .container2{
+        height: 100vh;
+    }
+
+.clip-path{
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 45px);
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    z-index: 1;
+}
+
+.clip-pathD{
+    position: absolute;
+    top: calc(50% + -115px);
+    left: calc(50% + -140px);
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.clip-pathI{
+    position: absolute;
+    top: calc(50% + 130px);
+    left: calc(50% + 110px);
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+@media (max-width: 500px){
+    .clip-path{
+        top: 50%;
+        left: calc(50% + 35px);
+        width: 180px;
+        height: 180px;
+    }
+    .clip-pathD{
+        top: calc(50% - 80px);
+        left: calc(50% - 85px);
+        width: 90px;
+        height: 90px;
+    }
+    .clip-pathI{
+        top: calc(50% + 95px);
+        left: calc(50% + 68px);
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		/* transform: translate3d(0, -20%, 0); */
+	}
+	to {
+		opacity: 1;
+		/* transform: translate3d(0, 0, 0); */
+	}
+}
+
+
+@keyframes autoFadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  @-webkit-keyframes autoFadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  .autoFadeIn {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-name: autoFadeIn;
+    animation-name: autoFadeIn;
+  }

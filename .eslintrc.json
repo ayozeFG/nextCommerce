@@ -1,7 +1,9 @@
 {
     "extends": ["eslint:recommended", "next"],
     "rules": {
-        "quotes": ["error", "single"]
+        "quotes": ["error", "single"],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "off"
       },
     "ignorePatterns": ["node_modules/", ".next/"],
     "env": {
