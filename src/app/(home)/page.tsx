@@ -2,7 +2,7 @@
 
 import { Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
-import Image from 'next/image'
+import InitLoader from '@/components/UI/InitLoader';
 
 export default function Home() {
     const [showComponentA, setShowComponentA] = useState(true);
@@ -17,35 +17,7 @@ export default function Home() {
 
     return (
         showComponentA ? (
-            <div className="container">
-                <div className='clip-pathD'>
-                    <Image
-                        className='background-image'
-                        src="/fondo.jpg"
-                        priority
-                        layout="fill"
-                        alt="Luxed stones"
-                        />
-                </div>
-                <div className='clip-path'>
-                    <Image
-                        className='background-image'
-                        src="/fondo.jpg"
-                        priority
-                        layout="fill"
-                        alt="Luxed stones"
-                        />
-                </div>
-                <div className='clip-pathI'>
-                    <Image
-                        className='background-image'
-                        src="/fondo.jpg"
-                        priority
-                        layout="fill"
-                        alt="Luxed stones"
-                        />
-                </div>
-            </div>
+            <InitLoader/>
         ) : (
             <div className="container2 autoFadeIn">
                 <div className='center'>
