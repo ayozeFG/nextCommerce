@@ -10,7 +10,7 @@ export default function Home() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowComponentA(!showComponentA);
-        }, 2500);
+        }, 3500);
 
         return () => clearTimeout(timer);
     }, []);
