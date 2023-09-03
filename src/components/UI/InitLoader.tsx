@@ -6,7 +6,7 @@ const InitLoader = () => {
             <div className='clip-pathD'>
                 <Image
                     className='background-image'
-                    src="/fondo.jpg"
+                    src="/izq.webp"
                     priority
                     layout="fill"
                     alt="Luxed stones"
@@ -15,7 +15,7 @@ const InitLoader = () => {
             <div className='clip-path'>
                 <Image
                     className='background-image'
-                    src="/fondo.jpg"
+                    src="/centro.webp"
                     priority
                     layout="fill"
                     alt="Luxed stones"
@@ -24,7 +24,7 @@ const InitLoader = () => {
             <div className='clip-pathI'>
                 <Image
                     className='background-image'
-                    src="/fondo.jpg"
+                    src="/der.webp"
                     priority
                     layout="fill"
                     alt="Luxed stones"

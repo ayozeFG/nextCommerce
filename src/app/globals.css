@@ -43,12 +43,15 @@ body {
 
 .container div:nth-child(1){
     animation-delay: 1s;
+    background-color: #ffffff47;
 }
 .container div:nth-child(2){
     animation-delay: 0.2s;
+    background-color: #ffffff47;
 }
 .container div:nth-child(3){
     animation-delay: 1.7s;
+    background-color: #ffffff47;
 }
 
 .container2{
@@ -70,8 +73,8 @@ body {
 
 .clip-pathD{
     position: absolute;
-    top: calc(50% - 20vh);
-    left: calc(50% - 25vh);
+    top: calc(50% - 12vh);
+    left: calc(50% - 21vh);
     transform: translate(-50%, -50%);
     width: 15vh;
     height: 15vh;
@@ -81,8 +84,8 @@ body {
 
 .clip-pathI{
     position: absolute;
-    top: calc(50% + 20vh);
-    left: calc(50% + 5vh);
+    top: calc(50% + 12.5vh);
+    left: calc(50% + 9vh);
     transform: translate(-50%, -50%);
     width: 15vh;
     height: 15vh;
