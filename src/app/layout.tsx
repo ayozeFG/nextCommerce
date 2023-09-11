@@ -15,9 +15,8 @@ export default function RootLayout({
 }) {
     return (
         <html lang="es">
-            <body>
+            <body className='init' >
                 <ThemeRegistry>
-                    {/* <div className='main'> */}
                     <div>
                         {children}
                     </div>
